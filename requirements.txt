@@ -1,0 +1,10 @@
+cat > requirements.txt << 'EOF'
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+torch>=2.2
+matplotlib>=3.8
+shap>=0.44
+tqdm>=4.66
+jupyter>=1.0
+EOF

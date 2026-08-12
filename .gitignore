@@ -1,0 +1,23 @@
+cat > .gitignore << 'EOF'
+# Environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Data — clinical data must never be committed
+data/*
+!data/.gitkeep
+
+# Results artifacts (keep folder, ignore large outputs)
+results/*
+!results/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+EOF
