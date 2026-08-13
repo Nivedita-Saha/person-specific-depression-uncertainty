@@ -4,7 +4,7 @@ Estimating depression severity (PHQ-8) from expressive-behaviour features — fa
 
 The project pairs this idea with a trustworthy-AI layer (calibrated uncertainty, explainability, fairness) and evaluates every component honestly against controlled baselines.
 
-> **Status:** pipeline built and validated end-to-end on synthetic data with a known ground-truth signal. Clinical evaluation on DAIC-WOZ / E-DAIC is planned (dataset access requested). Working on synthetic data first lets each method be validated where the correct answer is known.
+> **Status:** The pipeline is built and validated on synthetic data with a known ground-truth signal, so each method can be checked where the correct answer is known. It is designed so that real clinical feature sets (of the kind used in depression-from-interview research) can be substituted with minimal change.
 
 ## Results at a glance
 
@@ -62,7 +62,7 @@ python -m src.fairness # per-gender metrics
 
 ## Planned next steps
 
-- Swap synthetic data for DAIC-WOZ / E-DAIC feature files once access is granted.
+- Evaluate on a real clinical dataset of expressive-behaviour features with depression labels.
 - Repeated runs across seeds/splits for confidence intervals on the metrics.
 - Add audio features (e.g. COVAREP) as a second modality.
 - Revisit uncertainty–error correlation on real data, where difficulty varies across people.
